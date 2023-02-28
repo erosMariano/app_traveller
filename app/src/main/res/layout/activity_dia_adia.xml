@@ -4,16 +4,249 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_dia_a_dia"
+    android:scaleType="fitCenter"
     tools:context=".Dia_a_diaActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Outra activity"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="Fevereiro"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/perfil"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="65dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4DFFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/info_text_seg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="Seg"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/info_text_seg_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="27"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="65dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#4DFFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_view3"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/card_view1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/info_text_ter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="Ter"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/info_text_ter_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="28"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="65dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#4DFFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_view4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/info_text_qua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="Qua"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/info_text_qua_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="01"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view4"
+        android:layout_width="65dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#4DFFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_view5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/info_text_qui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="Qui"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/info_text_qui_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="02"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view5"
+        android:layout_width="65dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#4DFFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/info_text_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="Sex"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/info_text_sex_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:width="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="65dp"
+            android:text="03"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
